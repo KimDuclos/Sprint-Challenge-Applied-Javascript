@@ -30,11 +30,12 @@ class TabLink {
     // Add a click event that invokes this.selectTab
     this.tabElement.addEventListener('click', () => this.selectTab());
   }
+  
 
   selectTab() {
 
     // Select all elements with the .tab class on them
-    const tabs = document.querySelectorAll('.tabs');
+    const tabs = document.querySelectorAll('.tab');
     
     // Iterate through the NodeList removing the .active-tab class from each element
     Array.from(tabs).forEach(allElements => allElements.classList.remove('.active-tab'));
